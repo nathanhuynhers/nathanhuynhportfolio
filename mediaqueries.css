@@ -100,4 +100,7 @@
   .text-container {
     text-align: justify;
   }
+    section {
+    margin: 0 2rem;  /* Less margin for small screens */
+  }
 }

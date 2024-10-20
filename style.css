@@ -45,14 +45,14 @@ nav {
   z-index: 1000;
   background-color: #ffffff;
   width: 100%;
-  height: 68px;
-  padding-top: 5px;
-  padding-left: 10px;
+  height: 7.5vh;
+  padding-top: 0.313rem;
+  padding-left: 0.625rem;
   justify-content: space-between;
 }
 
 .nav-items {
-  padding-right: 25px;
+  padding-right: 1.5rem;
 }
 
 .nav-links {
@@ -74,7 +74,7 @@ a:hover {
 }
 
 .logo {
-  height: 6rem;
+  height: 4.5rem;
 }
 
 .logo:hover {
@@ -165,7 +165,6 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -191,8 +190,9 @@ section {
 .section__pic-container {
   display: flex;
   justify-content: center;
-  height: 400px;
-  width: 400px;
+  width: 100%;               /* Use full width of the container */
+  max-width: 400px;           /* Set a max-width so it doesn't grow too large */
+  height: auto;               /* Let the height adjust based on the image aspect ratio */
   margin: auto 0;
 }
 
@@ -362,6 +362,8 @@ section {
 .about-containers,
 .about-details-container {
   display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .about-pic {
@@ -387,7 +389,7 @@ section {
   padding: 2rem;
   border-radius: 1rem;
   width: 100%;
-  max-width: 700px;
+  max-width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
