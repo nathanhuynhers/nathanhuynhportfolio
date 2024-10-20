@@ -39,17 +39,17 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic-modified.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic-modified.png" alt="Nathan Huynh profile picture" />
       </div>
       <div class="section__text">
-        <h1 class="title">Nathan Huynh</h1>
+        <h1 class="title">I'm Nathan Huynh</h1>
         <div class="section__text__p2">
           I am a <span id="typed-output"></span>
         </div>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./assets/resume.pdf')"
           >
             Resume
           </button>
@@ -62,57 +62,67 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/nathan-huynh-b4b281298/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/nathanhuynhers'"
           />
         </div>
       </div>
     </section>
     <section id="about">
-      <h1 class="title">About Me</h1>
+      <h1 class="title-about-me">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              I'm a third-year at UC Berkeley, majoring in Computer Science and minoring in Data Science. I have a deep passion for learning and thrive on the opportunities that allow me to expand my knowledge. Whether it's diving into new projects, taking on challenging coursework, or collaborating with peers, I love to immerse myself in the learning process.
+              I’m always eager to take on new experiences and challenges, believing that each opportunity helps me grow and improve. I'm always on the lookout for new and exciting opportunities, so feel free to reach out! 
+            </p>
+          </div>
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
             <div class="details-container">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
-                class="icon"
+                class="icon-1"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>
+                School: University of California, Berkeley<br />
+                Major: Computer Science<br />
+                Minor: Data Science<br />
+                Year: Junior<br />
+              </p>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+            <div class="details-container">
+              <img
+                src="./assets/interests.png"
+                alt="Interests icon"
+                class="icon-1"
+              />
+              <h3>Technical Interests</h3>
+              <p>
+                Fullstack Engineering<br />
+                Machine Learning<br />
+                Artificial Intelligence<br />
+                Cloud Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/hobbies.png"
+                alt="Hobbies icon"
+                class="icon-1"
+              />
+              <h3>Hobbies</h3>
+              <p>
+                In my free time, I enjoy playing volleyball and video games! I love learning new strategies and trying to implement them in these activities. I also appreciate the thrill and adventure that come with experiences like roller coasters and horror movies. Currently, my goal is to memorize all 1,025 Pokémon!
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -344,7 +354,6 @@
       />
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -353,7 +362,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:examplemail@gmail.com">nathanhuynh102@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -361,7 +370,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/nathan-huynh-b4b281298/">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -382,7 +391,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var options = {
-          strings: ["UC Berkeley Student.","Software Engineer.", "Problem Solver."],  
+          strings: ["UC Berkeley Student.","Software Engineer.", "Problem Solver.", "Leader."],  
           typeSpeed: 30,
           backSpeed: 25,
           backDelay: 1000,

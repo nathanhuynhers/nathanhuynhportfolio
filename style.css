@@ -164,16 +164,25 @@ section {
 
 #profile {
   display: flex;
-  justify-content: center;
-  gap: 5rem;
+  flex-direction: column;
+  align-items: center;
   height: 80vh;
+  padding: 0;  /* No padding inside the profile section */
+  margin: 0;   /* No margin inside the profile section */
+  padding-bottom: 4rem; /* Adds space below the profile section */
 }
 
 .section__pic-container {
   display: flex;
+  justify-content: center;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.section__pic-container img {
+  height: 100%;
+  width: 100%;
 }
 
 .section__text {
@@ -199,6 +208,19 @@ section {
   font-weight: 500;
   text-align: center;
 }
+
+.title-about-me {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 4px solid black; /* Add a black line under the text */
+  display: inline-block;  /* Keeps underline to text width */
+  padding-bottom: 0.5rem;  /* Adds spacing between the text and the underline */
+  margin: 0 auto;  /* Ensures the title stays centered */
+}
+
+
+
 
 #socials-container {
   display: flex;
@@ -266,6 +288,7 @@ section {
 
 #about {
   position: relative;
+  text-align: center;
 }
 
 .about-containers {
@@ -277,6 +300,11 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+}
+
+.text-container p {
+  font-size: 1.9rem;  /* Increase the font size as needed */
+  line-height: 1.6;    /* Adjust line height for better readability */
 }
 
 .about-containers,
@@ -304,6 +332,16 @@ section {
   text-align: center;
 }
 
+.details-container p{
+  font-size: 1.1rem;  /* Increase the font size as needed */
+  line-height: 1.6;    /* Adjust line height for better readability */
+}
+
+.details-container h3{
+  font-size: 1.3rem;  /* Increase the font size as needed */
+  line-height: 1.6;    /* Adjust line height for better readability */
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -313,6 +351,15 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+.icon-1 {
+  width: 50px;  /* Adjust the size of the icon */
+  transition: transform 0.3s ease;  /* Smooth transition when hovering */
+}
+
+.icon-1:hover {
+  transform: translateY(-10px);  /* Move the icon up by 10px */
 }
 
 /* EXPERIENCE SECTION */
