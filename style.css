@@ -185,7 +185,7 @@ section {
   padding: 0;  /* No padding inside the profile section */
   margin: 0;   /* No margin inside the profile section */
   padding-bottom: 4rem; /* Adds space below the profile section */
-  padding-top: 4rem;
+  padding-top: 9rem;
 }
 
 .section__pic-container {
@@ -222,6 +222,7 @@ section {
 .section__text__p2__change {
   font-size: 1.75rem;
   margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 #typed-output {
@@ -231,6 +232,8 @@ section {
 .title {
   font-size: 3rem;
   font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
   color:#353334  /* Updated label color */
 }
@@ -263,6 +266,7 @@ section {
 .title-project {
   font-size: 3rem;
   font-weight: 500;
+  padding-bottom: 2rem;
   text-align: center;
   color:#1f1e74  /* Updated label color */
 }
@@ -289,6 +293,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 .btn {
@@ -370,12 +375,20 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  /* padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: #5469d0;
+  text-align: center; */
+
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -452,7 +465,7 @@ section {
 }
 
 .experience-sub-title {
-  color: #5469d0;  /* Updated label color */
+  color: #353334;  /* Updated label color */
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -473,6 +486,17 @@ section {
   justify-content: space-around;
 }
 
+.article-container h3 {
+  color: #353334;
+  transition: transform 0.3s ease;
+}
+
+.article-container h3:hover {
+  color: #5469d0;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
 article {
   display: flex;
   width: 10rem;
@@ -484,6 +508,7 @@ article .icon {
   cursor: default;
   color: #5469d0;  /* Updated label color */
 }
+
 
 /* PROJECTS SECTION */
 
@@ -513,6 +538,113 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.project-item {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.project-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #353334;
+}
+
+.project-description {
+  font-size: 1.1rem;
+  color: #353334;
+  margin-bottom: 1.5rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-buttons .btn {
+  text-decoration: none;
+  padding: 1rem;
+  font-weight: 600;
+  border-radius: 2rem;
+  border: 1px solid #1f1e74;
+  text-align: center;
+}
+
+.project-buttons .btn.btn-color-2 {
+  background-color: #ffffff;
+  color: #1f1e74;
+  border: 1px solid #1f1e74;
+}
+
+.project-buttons .btn.btn-color-2:hover {
+  background-color: #1f1e74;
+  color: white;
+}
+
+.project-buttons .btn.btn-color-1 {
+  background-color: #1f1e74;
+  color: white;
+}
+
+.project-buttons .btn.btn-color-1:hover {
+  background-color: #01003d;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 0.75rem; /* Slightly reduce gap between tech items */
+  margin-bottom: 1.5rem; /* Increased space after the tech stack */
+  flex-wrap: wrap; /* Ensures the tech stack wraps nicely */
+  list-style: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  background-color: #5469d0;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+}
+
+.project-row {
+  display: flex;
+  gap: 3rem;
+  
+}
+
+.project-image {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.project-image img {
+  max-width: 80%; /* Restrict image to the width of its container */
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-blank img {
+  max-width: 80%; /* Restrict image to the width of its container */
+
+}
 /* CONTACT */
 
 #contact {
