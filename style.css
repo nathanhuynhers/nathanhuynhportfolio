@@ -624,7 +624,6 @@ article .icon {
 
 .project-row {
   display: flex;
-  flex-wrap: wrap;  /* Allows the project items to wrap on smaller screens */
   gap: 3rem;
   
 }

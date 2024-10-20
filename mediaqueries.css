@@ -119,5 +119,6 @@
   .project-row {
     flex-direction: column;  /* Ensure rows stack vertically */
     gap: 1.5rem;  /* Adjust gap for smaller screens */
+    flex-wrap: wrap;
   }
 }
