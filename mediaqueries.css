@@ -88,7 +88,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: auto;
     justify-content: center;
     max-width: 200px;
   }
@@ -107,6 +107,8 @@
   .project-item {
     flex: 1 1 100%;
     width: 100%;   /* Stack project items vertically on smaller screens */
+    max-width: 90%;
+    padding: 1rem;
   }
   .project-list {
     display: flex;
