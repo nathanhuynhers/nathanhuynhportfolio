@@ -197,8 +197,9 @@ section {
 }
 
 .section__pic-container img {
-  height: 100%;
+  height: auto;
   width: 100%;
+  object-fit: cover;
 }
 
 .section__text {
@@ -623,6 +624,7 @@ article .icon {
 
 .project-row {
   display: flex;
+  flex-wrap: wrap;  /* Allows the project items to wrap on smaller screens */
   gap: 3rem;
   
 }
@@ -639,6 +641,8 @@ article .icon {
 
 .project-image img {
   max-width: 80%; /* Restrict image to the width of its container */
+  width: 100%;
+  height: auto;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -90,6 +90,7 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+    max-width: 200px;
   }
   .section__text__p2 {
     font-size: 1.25rem;
@@ -100,7 +101,21 @@
   .text-container {
     text-align: justify;
   }
-    section {
+  section {
     margin: 0 2rem;  /* Less margin for small screens */
+  }
+  .project-item {
+    flex: 1 1 100%;
+    width: 100%;   /* Stack project items vertically on smaller screens */
+  }
+  .project-list {
+    display: flex;
+    flex-direction: column;  /* Stack the rows vertically */
+  }
+  
+
+  .project-row {
+    flex-direction: column;  /* Ensure rows stack vertically */
+    gap: 1.5rem;  /* Adjust gap for smaller screens */
   }
 }
