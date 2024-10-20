@@ -11,8 +11,12 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/nh-logo2.png" alt="logo" class="logo" />
+        </a>
+      </div>
+      <div class="nav-items">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -22,7 +26,12 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo"><img
+        src="./assets/nh-logo2.png"
+        alt="logo"
+        class="logo"
+      /></div>
+      <div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -43,7 +52,7 @@
       </div>
       <div class="section__text">
         <h1 class="title">I'm Nathan Huynh</h1>
-        <div class="section__text__p2">
+        <div class="section__text__p2__change">
           I am a <span id="typed-output"></span>
         </div>
         <div class="btn-container">
@@ -126,150 +135,81 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
+      <h1 class="title-experience">Experience</h1>
+      <div class="experience-entry">
+        <div class="experience-header">
+          <h3>The Aerospace Corporation</h3>
+          <p>Software Engineer Intern</p>
+        </div>
+        <div class="experience-timeline">
+          <p>May 2024 - August 2024</p>
+        </div>
+        <div class="experience-description">
+          <p>
+            I contributed to the development of a web application that allows government customers to create and edit documents for publishing their work and findings. Utilizing an Angular frontend, a Python Flask backend, and a MongoDB database, I engineered an advanced admin dashboard that centralized document management, including status control and portion marking capabilities. This improved workflow efficiency by 40%, streamlining operations for over 30 team members. Additionally, I created a CI/CD pipeline using Jenkins for an interference analysis project, reducing deployment time by 14%. I also increased test coverage for the project by 16%, significantly enhancing overall project reliability and quality.
+          </p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+    
+      <div class="experience-entry">
+        <div class="experience-header">
+          <h3>UC Berkeley Computer Science Department</h3>
+          <p>Course Staff CS61A Tutor</p>
+        </div>
+        <div class="experience-timeline">
+          <p>August 2024 - Present</p>
+        </div>
+        <div class="experience-description">
+          <p>
+            I lead office hours for over 1,000 students, covering essential topics such as Object-Oriented Programming (OOP), recursion, control structures, and higher-order functions in languages like Python, Scheme, and SQL. In addition to supporting students through office hours, I also ran exam prep sessions to help students prepare for Midterms/Finals. I assisted in grading and evaluating their assignments, providing detailed feedback to promote academic growth and a deeper understanding of the course material.
+          </p>
+        </div>
+        <div class="experience-header">
+          <p>CS10 Academic Lab Intern</p>
+        </div>
+        <div class="experience-timeline">
+          <p>January 2023 - January 2024</p>
+        </div>
+        <div class="experience-description">
+          <p>
+            I assisted in labs by teaching students the foundational concepts of computer science and guiding them through algorithmic approaches to problem-solving. I help students understand key principles and support them with lab assignments, reinforcing their knowledge of basic programming concepts. My role also involves fostering computational thinking skills, enabling students to confidently tackle complex problems and develop a strong grasp of fundamental algorithms and logic.
+          </p>
+        </div>
+      </div>
+    
+      <div class="experience-entry">
+        <div class="experience-header">
+          <h3>Computer Science Mentors</h3>
+          <p>Junior Mentor -> Senior Mentor</p>
+        </div>
+        <div class="experience-timeline">
+          <p>August 2023 - Present</p>
+        </div>
+        <div class="experience-description">
+          <p>
+            I lead weekly sections for a group of Berkeley students, focusing on core topics from the university’s introductory CS courses. I actively help students grasp fundamental computer science concepts by facilitating discussions and working through challenging material. In addition to section facilitation, I plan and run review sessions for midterms and finals to help students feel confident and prepared. I also mentor and train junior mentors, equipping them with effective teaching techniques to ensure they can provide the best support to their students.
+          </p>
+        </div>
+      </div>
+      <div class="experience-entry">
+        <div class="experience-header">
+          <h3>Computer Science Undergraduate Association</h3>
+          <p>Officer</p>
+        </div>
+        <div class="experience-timeline">
+          <p>January 2024 - May 2024</p>
+        </div>
+        <div class="experience-description">
+          <p>
+            I assisted new students in navigating the CS program and provide academic support at our office. I offer guidance to help students succeed in their coursework and connect them with the resources they need to thrive in the program. Additionally, I work closely with peers to maintain a welcoming and organized environment, ensuring the space is conducive to collaboration and academic growth for all students involved.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
+      <h1 class="title-project">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container color-container">
@@ -346,15 +286,9 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <section id="contact">
-      <h1 class="title">Contact Me</h1>
+      <h1 class="title-contact">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
