@@ -139,6 +139,34 @@
     </section>
     <section id="experience">
       <h1 class="title-experience">Experience</h1>
+        <div class="experience-entry">
+          <div class="experience-header">
+            <h3>Amazon</h3>
+            <p>Software Development Engineer Intern</p>
+          </div>
+          <div class="experience-timeline">
+            <p>May 2025 - August 2025</p>
+          </div>
+          <div class="experience-description">
+            <p>
+              I worked on the Amazon Stores team, where I designed and implemented an automated traffic shaping system to handle massive message surges that previously created backlogs of over 100 million messages and delayed enforcement by up to two weeks. Using AWS Lambda, SQS, CloudWatch, and DynamoDB, I built monitoring and redrive workflows that proactively rerouted excess traffic and safely reintroduced it once systems stabilized. This reduced enforcement delays from 10 - 14 days to less than 24 hours, eliminated over 60% of manual on-call interventions, and improved system availability, ensuring more reliable policy updates for millions of Amazon customers.
+            </p>
+          </div>      
+        </div>   
+      <div class="experience-entry">
+        <div class="experience-header">
+          <h3>Alliance for Clean Energy New York | Blueprint </h3>
+          <p>Software Developer</p>
+        </div>
+        <div class="experience-timeline">
+          <p>January 2025 - May 2025</p>
+        </div>
+        <div class="experience-description">
+          <p>
+            I served as a full-stack developer contracted by ACE NY through Blueprint, where I built a web application to help users explore more than 1,000 renewable energy projects across New York. Working with React, TypeScript, and Supabase alongside a team, I improved user search efficiency by implementing dynamic location-based filtering and CSV export features, ultimately reducing project exploration time by 70%.
+          </p>
+        </div>
+      </div>      
       <div class="experience-entry">
         <div class="experience-header">
           <h3>The Aerospace Corporation</h3>
@@ -183,7 +211,7 @@
       <div class="experience-entry">
         <div class="experience-header">
           <h3>Computer Science Mentors</h3>
-          <p>Junior Mentor -> Senior Mentor</p>
+          <p>Junior Mentor -> Senior Mentor -> Senior Advisor</p>
         </div>
         <div class="experience-timeline">
           <p>August 2023 - Present</p>
@@ -411,6 +439,27 @@
       <h1 class="title-project">Projects</h1>
       <div class="project-list">
         <div class="project-row">
+          
+
+          <div class="project-item">
+            <h3 class="project-name">Alliance for Clean Energy New York Website</h3>
+            <div class="project-image">
+              <img src="./assets/aceny.png" alt="Screenshot of ACE NY Website" />
+            </div>
+            <p class="project-description">
+              A full-stack web application built through UC Berkeley’s Blueprint program for the Alliance for Clean Energy New York (ACE NY). The platform allows users to explore over 1,000 renewable energy projects across New York, providing interactive search, location-based filtering, and CSV export features. Developed with React, TypeScript, and Supabase, the site improves accessibility and transparency of clean energy initiatives, helping policymakers, developers, and the public engage with renewable energy progress.
+            </p>
+            <ul class="tech-stack">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Supabase</li>
+            </ul>
+            <div class="project-buttons">
+              <a href="https://github.com/calblueprint/ace-ny" target="_blank" class="btn btn-color-1">GitHub</a>
+              <a href="https://ace-ny-mvp.vercel.app/" target="_blank" class="btn btn-color-1">Live Site</a>
+            </div>
+          </div>
+
           <div class="project-item">
             <h3 class="project-name">Lectury</h3>
             <div class="project-image">
@@ -426,28 +475,12 @@
             </ul>
             <div class="project-buttons">
               <a href="https://github.com/nathanhuynhers/lectury-frontend" class="btn btn-color-1">GitHub</a>
-              <a class="btn btn-color-1">Video Demo</a>
-            </div>
-          </div>
-      
-          <!-- Project 2 -->
-          <div class="project-item">
-            <h3 class="project-name">TikTok Reddit Story Video Automator</h3>
-            <div class="project-image">
-              <img src="./assets/tiktok.png" alt="Screenshot of Project Two" />
-            </div>
-            <p class="project-description">
-              A Python bot that automates the creation of TikTok videos featuring popular Reddit stories, using trending formats with gameplay backgrounds. It streamlines the entire process, from content retrieval using the Reddit API (PRAW) to text-to-speech voice overs with Google Text-to-Speech, and final video creation with the Pymovie library. The bot efficiently handles video production, allowing for rapid and consistent content generation.
-            </p>
-            <ul class="tech-stack">
-              <li>Python</li>
-            </ul>
-            <div class="project-buttons">
-              <a  class="btn btn-color-1">GitHub</a>
-              <a  class="btn btn-color-1">Video Demo</a>
+              <a href="https://nathanhuynhers.github.io/lectury-frontend/" class="btn btn-color-1">Live Site</a>
             </div>
           </div>
         </div>
+      
+        
         <div class="project-row">
           <div class="project-item">
             <h3 class="project-name">WordNet and NGram Viewer</h3>
@@ -506,24 +539,24 @@
       
  
           <div class="project-item">
-            <h3 class="project-name">More to Come!</h3>
-            <div class="project-image-blank">
-              <img src="./assets/blank.png" alt="Screenshot of Project Six" />
+            <h3 class="project-name">TikTok Reddit Story Video Automator</h3>
+            <div class="project-image">
+              <img src="./assets/tiktok.png" alt="Screenshot of Project Two" />
             </div>
-            <!-- <p class="project-description">
-              KeyQuest is a 2D tile-based world exploration game built in Java, where players can explore and interact with their environment using customizable tiles and avatars. It features a random room generation algorithm and a near-sight functionality that adds a layer of challenge to exploration, making the gameplay more immersive and engaging.
+            <p class="project-description">
+              A Python bot that automates the creation of TikTok videos featuring popular Reddit stories, using trending formats with gameplay backgrounds. It streamlines the entire process, from content retrieval using the Reddit API (PRAW) to text-to-speech voice overs with Google Text-to-Speech, and final video creation with the Pymovie library. The bot efficiently handles video production, allowing for rapid and consistent content generation.
             </p>
             <ul class="tech-stack">
-              <li>Java</li>
+              <li>Python</li>
             </ul>
             <div class="project-buttons">
-              <a href="https://fa23.datastructur.es/materials/proj/proj3/" class="btn btn-color-1">Spec</a>
-              <a href="https://drive.google.com/file/d/1hiTQO7cDTbBtngWitl81hp35M1oYxdWw/view?resourcekey" class="btn btn-color-1">Video Demo</a>
-            </div> -->
+            </div>
           </div>
         </div>
 
-    
+  
+        
+
       </div>
     </section>
     <section id="contact">
